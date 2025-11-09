@@ -850,11 +850,13 @@ h2::after {
 
     /* Calendar Section */
     .calendar-section {
-        padding: 15px 10px;
+        padding: 12px 8px;
         border-radius: 15px;
         overflow-x: visible;
         width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .calendar-header {
@@ -879,22 +881,24 @@ h2::after {
     }
 
     .calendar-grid {
-        gap: 4px;
+        gap: 3px;
         width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .calendar-day-header {
-        font-size: 0.7em;
-        padding: 10px 2px;
-        letter-spacing: 0.5px;
+        font-size: 0.65em;
+        padding: 9px 1px;
+        letter-spacing: 0.3px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
     .calendar-day {
-        min-height: 50px;
-        padding: 4px;
+        min-height: 45px;
+        padding: 3px;
         border-radius: 8px;
         aspect-ratio: 1;
     }
@@ -1062,9 +1066,11 @@ h2::after {
 
     /* Calendar */
     .calendar-section {
-        padding: 12px 8px;
+        padding: 10px 5px;
         width: 100%;
         box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .calendar-header {
@@ -1088,16 +1094,18 @@ h2::after {
     }
 
     .calendar-grid {
-        gap: 3px;
+        gap: 2px;
         width: 100%;
         box-sizing: border-box;
         padding: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .calendar-day-header {
-        font-size: 0.6em;
-        padding: 8px 1px;
-        letter-spacing: 0.2px;
+        font-size: 0.55em;
+        padding: 7px 0px;
+        letter-spacing: 0.1px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -1105,7 +1113,7 @@ h2::after {
     }
 
     .calendar-day {
-        min-height: 38px;
+        min-height: 35px;
         padding: 2px;
         border-radius: 6px;
         aspect-ratio: 1;
@@ -1235,6 +1243,128 @@ h2::after {
 
     .advance-item {
         padding: 18px;
+    }
+}
+
+/* Portrait orientation for mobile - make calendar more compact */
+@media (max-width: 768px) and (orientation: portrait) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .main-content {
+        padding: 15px 8px;
+    }
+
+    .calendar-section {
+        padding: 10px 5px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .calendar-grid {
+        gap: 2px;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .calendar-day-header {
+        font-size: 0.55em;
+        padding: 8px 0px;
+        letter-spacing: 0.1px;
+        min-width: 0;
+    }
+
+    .calendar-day {
+        min-height: 35px;
+        padding: 2px;
+        border-radius: 6px;
+        min-width: 0;
+    }
+
+    .day-number {
+        font-size: 0.85em;
+    }
+
+    .day-status {
+        font-size: 0.55em;
+        margin-top: 1px;
+        letter-spacing: 0.2px;
+    }
+
+    .calendar-header {
+        margin-bottom: 10px;
+    }
+
+    #current-month-year {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    body {
+        padding: 3px;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-content {
+        padding: 10px 5px;
+    }
+
+    .calendar-section {
+        padding: 8px 4px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .calendar-grid {
+        gap: 1.5px;
+        margin-top: 8px;
+        margin-left: 0;
+        margin-right: 0;
+        width: calc(100% - 0px);
+    }
+
+    .calendar-day-header {
+        font-size: 0.5em;
+        padding: 6px 0px;
+        letter-spacing: 0px;
+        min-width: 0;
+    }
+
+    .calendar-day {
+        min-height: 32px;
+        padding: 1px;
+        border-radius: 4px;
+        min-width: 0;
+    }
+
+    .day-number {
+        font-size: 0.75em;
+    }
+
+    .day-status {
+        font-size: 0.45em;
+        margin-top: 0px;
+        letter-spacing: 0.1px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 1.3em;
     }
 }
 
